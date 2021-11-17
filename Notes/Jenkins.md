@@ -1,0 +1,5 @@
+- intergration tool
+- Widely used
+- open-source
+- essential part of the DevOps lifecycle
+- can be aimed at a git repo
