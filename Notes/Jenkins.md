@@ -44,4 +44,19 @@
     - add commands
 
 ### webhook info
-- https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project
+- **GitHub steps**
+- go to your GitHub repository and click on **‘Settings’**.
+- Click on Webhooks and then click on **‘Add webhook’**.
+- In the **‘Payload URL’** field, paste your Jenkins environment URL. At the end of this URL add /github-webhook/. In the ‘Content type’ select: ‘application/json’ and leave the **‘Secret’** field empty.
+- In the page **‘Which events would you like to trigger this webhook?’** choose ‘Let me select individual events.’ Then, check **‘Pull Requests’** and **‘Pushes’**. At the end of this option, make sure that the ‘Active’ option is checked and click on ‘Add webhook’.
+
+- **Jenkins steps**
+- In Jenkins, click on **‘New Item’** to create a new project.
+- Give your project a name, then choose **‘Freestyle project’** and finally, click on ‘OK’.
+- Click on the **‘Source Code Management’** tab.
+- Click on Git and paste your GitHub repository URL in the **‘Repository URL’** field.
+- Click on the **‘Build Triggers’** tab and then on the ‘GitHub hook trigger for GITScm polling’. Or, choose the trigger of your choice.
+
+- Reference: https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project
+
+**Ensure that "GitHub hook trigger for GITScm polling" is ticked in "Build Triggers" on Jenkins, otherwise it wont link
