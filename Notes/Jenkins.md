@@ -60,3 +60,4 @@
 - Reference: https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project
 
 **Ensure that "GitHub hook trigger for GITScm polling" is ticked in "Build Triggers" on Jenkins, otherwise it wont link
+jenkins merge
