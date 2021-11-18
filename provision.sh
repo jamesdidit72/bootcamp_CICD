@@ -15,8 +15,10 @@ sudo echo 'export DB_HOST="mongodb://54.77.70.61:27017/posts"' >> ~/.bashrc # da
 source ~/.bashrc
 echo "SOURCE COMMAND RUN"
 printenv DB_HOST
+
 sudo rm /etc/nginx/sites-available/default
-sudo cp /home/ubuntu/bootcamp_CICD/environment/app/nginx.default /etc/nginx/sites-available/default
+sudo cp ~/bootcamp_CICD/default /etc/nginx/sites-available/default
+
 echo "restarting nginx"
 sudo service nginx restart
 sudo systemctl enable nginx
