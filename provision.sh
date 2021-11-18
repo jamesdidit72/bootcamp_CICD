@@ -16,7 +16,7 @@ source ~/.bashrc
 echo "SOURCE COMMAND RUN"
 printenv DB_HOST
 sudo rm /etc/nginx/sites-available/default
-sudo cp /home/ubuntu/environment/nginx.default /etc/nginx/sites-available/default
+sudo cp /home/ubuntu/SRE_JENKINS_CICD/environment/nginx.default /etc/nginx/sites-available/default
 echo "restarting nginx"
 sudo service nginx restart
 sudo systemctl enable nginx
