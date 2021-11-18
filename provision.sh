@@ -22,9 +22,9 @@ sudo service nginx restart
 sudo systemctl enable nginx
 
 echo "Attempting npm install steps"
-cd ~/DevOpsBootcamp_Jenkins/app
+cd ~/bootcamp_CICD/app
 sudo apt-get install npm -y
 sudo npm install
 sudo npm install express
 echo "npm install run successfully"
-node ~/DevOpsBootcamp_Jenkins/app/seeds/seed.js
+node ~/bootcamp_CICD/app/seeds/seed.js
